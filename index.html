@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumz — Thumbnails profissionais em menos de 2 minutos</title>
+  <meta name="description" content="A Thumz transforma o rascunho que só você entenderia em uma thumbnail ultrarrealista pronta pra publicar. Sem Photoshop, sem designer, sem espera.">
+  <link rel="preload" href="image/depois-01.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="image/antes-01.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-decor" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#topo" class="logo">
+        <svg class="logo__mark" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path fill="var(--blue)" d="M0 22 H128 V74 H84 V222 H40 V74 H0 Z"/>
+          <circle cx="150" cy="72" r="64" fill="var(--blue)"/>
+          <path fill="var(--bg)" d="
+            M118 14
+            C140 18 156 34 160 58
+            C162 70 158 80 148 84
+            C152 92 160 96 170 94
+            C166 108 154 116 140 112
+            C132 128 116 136 98 132
+            C110 118 116 100 112 82
+            C108 62 108 40 118 14
+            Z"/>
+          <path fill="var(--blue)" d="M162 66 C170 60 182 60 190 66 L190 78 C182 72 170 72 162 78 Z"/>
+        </svg>
+        <span class="logo__text">Thumz</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#solucao">Como funciona</a>
+        <a href="#galeria">Resultados</a>
+        <a href="#portfolio">Criações</a>
+        <a href="#precos">Planos</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+
+      <a href="#precos" class="btn btn--primary btn--sm">Começar agora</a>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- HERO -->
+    <section class="hero" id="galeria">
+      <div class="hero__arc" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__inner">
+          <span class="eyebrow">THUMBNAILS COM IA</span>
+          <h1>Vídeo bom não basta.<br>É a <span class="text-blue">thumbnail</span> que decide o clique.</h1>
+          <p class="hero__sub">A Thumz pega o rascunho torto que só você entenderia e devolve uma thumbnail ultrarrealista, pronta pra publicar — em menos de 2 minutos, sem Photoshop e sem esperar designer.</p>
+          <div class="hero__cta">
+            <a href="#precos" class="btn btn--primary btn--lg">Quero minhas thumbs agora</a>
+            <span class="hero__note">Cancele quando quiser. Sem letra miúda.</span>
+          </div>
+        </div>
+
+        <p class="hero__gallery-label">Arraste e compare</p>
+        <div class="gallery">
+          <div class="compare">
+            <img class="compare__after" src="image/depois-01.webp" width="1200" height="675" alt="Thumbnail final gerada pela Thumz" loading="eager" fetchpriority="high" decoding="async">
+            <img class="compare__before" src="image/antes-01.webp" width="1200" height="675" alt="Esboço bruto enviado para a Thumz" loading="eager" fetchpriority="high" decoding="async">
+            <span class="compare__badge compare__badge--before">ANTES</span>
+            <span class="compare__badge compare__badge--after">DEPOIS</span>
+            <div class="compare__handle" aria-hidden="true">
+              <span class="compare__handle-line"></span>
+              <span class="compare__handle-grip">&#8596;</span>
+            </div>
+            <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Arraste para comparar antes e depois">
+          </div>
+          <div class="compare">
+            <img class="compare__after" src="image/depois-02.webp" width="1200" height="675" alt="Thumbnail final gerada pela Thumz" loading="eager" decoding="async">
+            <img class="compare__before" src="image/antes-02.webp" width="1200" height="675" alt="Esboço bruto enviado para a Thumz" loading="eager" decoding="async">
+            <span class="compare__badge compare__badge--before">ANTES</span>
+            <span class="compare__badge compare__badge--after">DEPOIS</span>
+            <div class="compare__handle" aria-hidden="true">
+              <span class="compare__handle-line"></span>
+              <span class="compare__handle-grip">&#8596;</span>
+            </div>
+            <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Arraste para comparar antes e depois">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="section" id="problema">
+      <div class="container">
+        <span class="eyebrow">O PROBLEMA</span>
+        <h2>Seu vídeo já morreu antes de alguém assistir</h2>
+        <p class="section__lead">Ninguém lê o título com calma. Ninguém abre a descrição. As pessoas decidem em menos de um segundo, só olhando a miniatura — e se ela não gritar "clica aqui", seu vídeo vira mais um número perdido no feed.</p>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+            <h3>Fazer você mesmo</h3>
+            <p>Horas travado num editor de imagem pra sair algo que parece feito às pressas — porque foi.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <h3>Contratar um designer</h3>
+            <p>Preço que sobe todo mês, prazo que nunca cabe no seu calendário, e um vai-e-vem de ajustes que não acaba.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+            <h3>Usar template pronto</h3>
+            <p>O mesmo template que outros 40 canais do seu nicho já usaram essa semana. Zero destaque, zero clique.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUÇÃO -->
+    <section class="section" id="solucao">
+      <div class="container">
+        <span class="eyebrow">A SOLUÇÃO</span>
+        <h2>Você não precisa saber desenhar.<br>Só precisa ter uma ideia.</h2>
+        <p class="section__lead">A Thumz foi treinada em cima de milhares de thumbnails que realmente performaram — não protótipos bonitos que ninguém clica. Você manda um rascunho torto, uma referência qualquer, uma ideia solta. A IA devolve uma imagem ultrarrealista, pronta pra publicar.</p>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step__number">01</span>
+            <h3>Envie seu rascunho</h3>
+            <p>Vale desenho no papel, print de referência, ou só um rabisco feito no celular.</p>
+          </div>
+          <div class="step">
+            <span class="step__number">02</span>
+            <h3>Descreva o que você quer</h3>
+            <p>Em português mesmo, sem termo técnico e sem manual de instruções.</p>
+          </div>
+          <div class="step">
+            <span class="step__number">03</span>
+            <h3>Gere em 1 clique</h3>
+            <p>Sua thumbnail sai pronta em menos de 2 minutos, em alta resolução.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO / CRIADO COM THUMZ -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <span class="eyebrow">CRIADO COM THUMZ</span>
+        <h2>Criadores de todo tipo de canal já usam a Thumz</h2>
+        <p class="section__lead">Terror, games, finanças, humor, educação — não importa o nicho. Se o criador teve uma ideia, a Thumz virou thumbnail.</p>
+
+        <div class="grid grid--3 portfolio">
+          <div class="portfolio__item">
+            <img src="image/thumb-02.webp" width="1200" height="675" alt="Thumbnail gerada pela Thumz" loading="lazy" decoding="async">
+          </div>
+          <div class="portfolio__item">
+            <img src="image/thumb-prospeccao.webp" width="1200" height="675" alt="Thumbnail gerada pela Thumz" loading="lazy" decoding="async">
+          </div>
+          <div class="portfolio__item">
+            <img src="image/POPPY-PLAY-TIME-DEPOIS.webp" width="1200" height="675" alt="Thumbnail gerada pela Thumz" loading="lazy" decoding="async">
+          </div>
+          <div class="portfolio__item">
+            <img src="image/robo-jhon.webp" width="1200" height="675" alt="Thumbnail gerada pela Thumz" loading="lazy" decoding="async">
+          </div>
+          <div class="portfolio__item">
+            <img src="image/minecraft-resultado.webp" width="1200" height="675" alt="Thumbnail gerada pela Thumz" loading="lazy" decoding="async">
+          </div>
+          <div class="portfolio__item">
+            <img src="image/dopaminee.webp" width="1200" height="670" alt="Thumbnail gerada pela Thumz" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <!-- ATENÇÃO: depoimentos ilustrativos com nomes fictícios, usados como placeholder
+         até existirem depoimentos reais de clientes. Trocar antes de publicar o site. -->
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <span class="eyebrow">QUEM JÁ USA</span>
+        <h2>Criadores que pararam de se preocupar com thumbnail</h2>
+
+        <div class="grid grid--3">
+          <div class="card card--quote">
+            <p>"Eu levava duas horas pra fazer uma thumb ruim. Hoje levo dois minutos pra fazer uma boa."</p>
+            <span class="card__author">Lucas Andrade · Canal de terror</span>
+          </div>
+          <div class="card card--quote">
+            <p>"Testei mais variação de thumbnail numa semana do que no ano inteiro de canal."</p>
+            <span class="card__author">Marina Torres · Canal de games</span>
+          </div>
+          <div class="card card--quote">
+            <p>"Meu CTR subiu de forma visível assim que troquei o template pela Thumz."</p>
+            <span class="card__author">Pedro Vasconcelos · Canal de finanças</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREÇOS -->
+    <section class="section" id="precos">
+      <div class="container">
+        <span class="eyebrow">PLANOS</span>
+        <h2>Escolha o plano do tamanho do seu canal</h2>
+
+        <div class="grid grid--3 pricing">
+          <div class="plan">
+            <h3>Thumz Start</h3>
+            <p class="plan__price"><span>R$</span>97<span>/mês</span></p>
+            <p class="plan__desc">Pra quem tá começando a levar o canal a sério.</p>
+            <ul class="plan__features">
+              <li>50 thumbnails por mês</li>
+              <li>Resolução Full HD (1920×1080)</li>
+              <li>1 imagem por geração</li>
+              <li>Ideal para 3–5 vídeos/mês</li>
+            </ul>
+            <a href="https://pay.cakto.com.br/9gctc65_1021205" class="btn btn--outline">Assinar Start</a>
+          </div>
+
+          <div class="plan plan--featured">
+            <span class="plan__badge">Mais popular</span>
+            <h3>Thumz Creator</h3>
+            <p class="plan__price"><span>R$</span>197<span>/mês</span></p>
+            <p class="plan__desc">Pra quem posta com frequência e não pode travar na thumbnail.</p>
+            <ul class="plan__features">
+              <li>150 thumbnails por mês</li>
+              <li>Resolução 2K (2560×1440)</li>
+              <li>2 imagens por geração</li>
+              <li>Suporte prioritário</li>
+              <li>Ideal para 10–15 vídeos/mês</li>
+            </ul>
+            <a href="https://pay.cakto.com.br/vrz2hkv_1044965" class="btn btn--primary">Assinar Creator</a>
+          </div>
+
+          <div class="plan">
+            <h3>Thumz Scale</h3>
+            <p class="plan__price"><span>R$</span>297<span>/mês</span></p>
+            <p class="plan__desc">Pra canais grandes, times e agências.</p>
+            <ul class="plan__features">
+              <li>400 thumbnails por mês</li>
+              <li>Resolução 4K</li>
+              <li>4 imagens por geração</li>
+              <li>Suporte VIP + acesso antecipado a recursos</li>
+              <li>Ideal para agências e múltiplos canais</li>
+            </ul>
+            <a href="https://pay.cakto.com.br/uxikgv8_1044968" class="btn btn--outline">Assinar Scale</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <span class="eyebrow">DÚVIDAS</span>
+        <h2>Perguntas frequentes</h2>
+
+        <div class="faq">
+          <div class="faq__item">
+            <button class="faq__question">O que é a Thumz?<span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p>Uma ferramenta que transforma rascunhos e ideias em thumbnails profissionais usando inteligência artificial, sem exigir nenhuma habilidade de design.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Preciso saber desenhar pra usar?<span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p>Não. Um rabisco simples já é suficiente. A IA entende a intenção, não a técnica do desenho.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Quantas thumbnails posso gerar por mês?<span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p>Depende do plano escolhido. O Start inclui 50, o Creator 150 e o Scale 400 gerações mensais.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">As imagens saem com marca d'água?<span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p>Não. Toda thumbnail gerada é sua, sem marca d'água, pronta pra publicar.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Posso usar as thumbnails comercialmente?<span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p>Sim, em qualquer plano você tem uso comercial liberado para seus próprios vídeos e canais.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question">Quanto tempo leva pra gerar uma thumbnail?<span class="faq__icon">+</span></button>
+            <div class="faq__answer"><p>Em média, menos de 2 minutos do envio do rascunho até a imagem final.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HONESTIDADE -->
+    <section class="section honesty">
+      <div class="container container--narrow text-center">
+        <span class="eyebrow">SEM PROMESSA VAZIA</span>
+        <h2>O que a Thumz não faz</h2>
+        <p class="section__lead">A Thumz não define sua estratégia de conteúdo, não escolhe seu público e não garante que um vídeo vai viralizar. Ninguém consegue prometer isso.</p>
+        <p class="honesty__punch">O que ela garante é simples: você testa 10 ideias de thumbnail no tempo que levaria pra testar uma só.</p>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+      <div class="container text-center">
+        <div class="cta-final__panel">
+          <h2>Sua próxima thumbnail pode ser a que muda seu CTR</h2>
+          <p>Pare de adivinhar o que funciona. Comece a testar.</p>
+          <a href="#precos" class="btn btn--primary btn--lg">Criar minha primeira thumbnail</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="logo logo--footer">
+        <svg class="logo__mark" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path fill="var(--blue)" d="M0 22 H128 V74 H84 V222 H40 V74 H0 Z"/>
+          <circle cx="150" cy="72" r="64" fill="var(--blue)"/>
+          <path fill="var(--bg)" d="
+            M118 14
+            C140 18 156 34 160 58
+            C162 70 158 80 148 84
+            C152 92 160 96 170 94
+            C166 108 154 116 140 112
+            C132 128 116 136 98 132
+            C110 118 116 100 112 82
+            C108 62 108 40 118 14
+            Z"/>
+          <path fill="var(--blue)" d="M162 66 C170 60 182 60 190 66 L190 78 C182 72 170 72 162 78 Z"/>
+        </svg>
+        <span class="logo__text">Thumz</span>
+      </div>
+      <p class="footer__copy">&copy; 2026 Thumz. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
